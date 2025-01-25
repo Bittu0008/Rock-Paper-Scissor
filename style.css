@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100vw;
+    position: relative;
+}
+
+.pg-1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: relative;
+}
+
+.pg-1 .nav {
+    height: 15vh;
+    width: 100%;
+    font-size: 4vw;
+    color: white;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-1 .choicess {
+    height: 40vh;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.pg-1 .choicess .choice {
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 15px black;
+}
+
+.pg-1 .choice:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.pg-1 .choice:hover img {
+    transform: scale(1.19);
+    transition: all ease .22s;
+}
+
+.pg-1 .choicess .choice img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pg-1 .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+    font-size: 2.9vw;
+    text-align: center;
+}
+
+.pg-1 .msg-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-1 .msg {
+    text-align: center;
+    font-size: 2.9vw;
+    margin-top: 5vh;
+    background-color: black;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media (max-width:600px) {
+    .pg-1 .choicess {
+        height: 40vh;
+        width: 100%;
+        margin-top: 5vh;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6vw;
+    }
+    .pg-1 .choicess .choice {
+        height: 11vh;
+        width: 11vh;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 15px black;
+    }
+    .pg-1 .score-board .score p {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    .pg-1 .msg {
+        text-align: center;
+        font-size: 4.5vw;
+        margin-top: 5vh;
+        background-color: black;
+        color: white;
+        padding: 1vh 5vw;
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+    }
+}
